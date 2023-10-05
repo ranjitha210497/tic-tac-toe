@@ -1,0 +1,56 @@
+:root {
+    --strike-color: rgb(9, 151, 92);
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 10px solid blueviolet;
+    font-size: 70px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(27, 27, 92);
+    position: relative;
+    .horizontal-check {
+        font-size: 180px;
+        width: 50px;
+        position: absolute;
+        top: 25%;
+        color: var(--strike-color);
+        left: 40%;
+        transform: translate(-50%, -75%);
+        z-index: 2;
+    }
+    .vertical-check {
+        font-size: 80px;
+        font-weight: bold;
+        width: 50px;
+        position: absolute;
+        top: 40%;
+        color: var(--strike-color);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .left-strike-check {
+        font-size: 150px;
+        width: 50px;
+        position: absolute;
+        top: 40%;
+        color: var(--strike-color);
+        left: 40%;
+        transform: translate(-30%, -50%) rotateX(50deg);
+        z-index: 2;
+        
+    }
+    .right-strike-check {
+        font-size: 150px;
+        width: 50px;
+        position: absolute;
+        top: 40%;
+        color: var(--strike-color);
+        left: 50%;
+        transform: translate(-50%, -50%) rotateX(45deg);
+        z-index: 2;   
+    }
+}
