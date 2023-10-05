@@ -30,6 +30,7 @@ function Board() {
 
   useEffect(() => {
     checkWinner();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [board]);
 
   const checkWinner = () => {
